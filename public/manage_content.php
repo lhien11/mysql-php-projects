@@ -1,17 +1,23 @@
 <?php require_once("../includes/session.php"); ?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
+<<<<<<< HEAD
 <?php confirm_logged_in(); ?>
 
 <?php $layout_context = "admin"; ?>
+=======
+>>>>>>> 41116fae71f75e5772990722d10b5f1f89de6afa
 <?php include("../includes/layouts/header.php"); ?>
 <?php find_selected_page(); ?>
 
 <div id="main">
   <div id="navigation">
+<<<<<<< HEAD
 		<br />
 		<a href="admin.php">&laquo; Main menu</a><br />
 		
+=======
+>>>>>>> 41116fae71f75e5772990722d10b5f1f89de6afa
 		<?php echo navigation($current_subject, $current_page); ?>
 		<br />
 		<a href="new_subject.php">+ Add a subject</a>
@@ -20,6 +26,7 @@
 		<?php echo message(); ?>
 		<?php if ($current_subject) { ?>
 	    <h2>Manage Subject</h2>
+<<<<<<< HEAD
 			Menu name: <?php echo htmlentities($current_subject["menu_name"]); ?><br />
 			Position: <?php echo $current_subject["position"]; ?><br />
 			Visible: <?php echo $current_subject["visible"] == 1 ? 'yes' : 'no'; ?><br />
@@ -57,6 +64,13 @@
 			<br />
       <br />
       <a href="edit_page.php?page=<?php echo urlencode($current_page['id']); ?>">Edit page</a>
+=======
+			Menu name: <?php echo $current_subject["menu_name"]; ?><br />
+			
+		<?php } elseif ($current_page) { ?>
+			<h2>Manage Page</h2>
+			Menu name: <?php echo $current_page["menu_name"]; ?><br />
+>>>>>>> 41116fae71f75e5772990722d10b5f1f89de6afa
 			
 		<?php } else { ?>
 			Please select a subject or a page.

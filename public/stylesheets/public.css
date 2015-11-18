@@ -59,15 +59,19 @@ ul.pages { padding-left: 2em; list-style: square; font-weight: normal; }
 }
 #page h2 { color: #8D0D19; margin-top: 1em;}
 #page h3 { color: #8D0D19; }
+<<<<<<< HEAD
 .view-content {
 	margin: 1em; padding: 1em; border: 1px solid #999;
 }
+=======
+>>>>>>> 41116fae71f75e5772990722d10b5f1f89de6afa
 
 div.message { 
 	border: 2px solid #8D0D19;
 	color: #8D0D19; font-weight: bold;
 	margin: 1em 0 ; padding: 1em; 
 }
+<<<<<<< HEAD
 
 /* errors */
 .error {
@@ -75,3 +79,5 @@ div.message {
 	margin: 1em 0; padding: 1em;
 }
 .error ul { padding-left: 2em; }
+=======
+>>>>>>> 41116fae71f75e5772990722d10b5f1f89de6afa

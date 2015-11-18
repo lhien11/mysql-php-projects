@@ -2,7 +2,10 @@
 <?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
 <?php require_once("../includes/validation_functions.php"); ?>
+<<<<<<< HEAD
 <?php confirm_logged_in(); ?>
+=======
+>>>>>>> 41116fae71f75e5772990722d10b5f1f89de6afa
 
 <?php
 if (isset($_POST['submit'])) {
